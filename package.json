@@ -1,0 +1,25 @@
+{
+  "name": "web-design",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/web-design.js",
+  "module": "./dist/web-design.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/counter.js",
+    "require": "./dist/counter.umd.cjs"
+  },
+  "scripts": {
+    "build": "vite build && tsc"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}
