@@ -1,10 +1,13 @@
 import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   build: {
     lib: {
-      entry: "./src/main.ts",
-      fileName: "web-design",
+      entry: "./src/index.ts",
+      name: "web-design",
+      fileName: "index",
     },
   },
+  plugins: [dts()],
 });
